@@ -34,16 +34,15 @@ function TodoList() {
   were not clicked on
   */
   const removeTodo = id => {
-    const removeArr =[...todos].filter(todo => todo.id !== id)
+    const removeArr = todos.filter(todo => todo.id !== id)
     setTodos(removeArr);
   }
 
   const completeTodo = id => {
     let updatedTodos = todos.map(todo => {
-      if (todo.id === id) {
-        todo.isComplete = !todo.isComplete
-      }
-      return todo;
+      return todo.id === id
+      ? { ...todo, isComplete: !todo.isComplete }
+      : todo
     })
     setTodos(updatedTodos);
   }
