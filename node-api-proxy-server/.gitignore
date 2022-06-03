@@ -1,0 +1,5 @@
+server/public/main.js*
+node_modules
+.vscode
+*.log
+.env
