@@ -28,6 +28,7 @@ router.get('/', cache('2 minutes'), async (req, res) => {
     // the data variable
     const apiRes = await needle('get', `${API_BASE_URL}?${params}`)
     const data = apiRes.body
+    console.log(data)
 
     // this will log whatever is being requested to the terminal
     // full url with api key name, api key, and any params
