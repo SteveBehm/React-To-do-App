@@ -117,3 +117,68 @@ ul li::before {
   color: brown;
   outline: none;
 }
+
+.addForm {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  font-size: 1rem;
+  padding: 0.20;
+  border-radius: 8px;
+  margin-right: 0.25rem;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background-color: brown;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  font-size: 1rem;
+  padding: 0.20;
+  border-radius: 8px;
+  margin-right: 0.25rem;
+  border: 1px solid #eee;
+  outline: none;
+}
